@@ -24,3 +24,43 @@ img {
 p {
     padding: 10px;
 }
+
+/* Limit main content width */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the aside section */
+aside {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Resize image inside aside only */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Override main profile image */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Fix paragraph padding */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #999;
+    text-align: center;
+}
