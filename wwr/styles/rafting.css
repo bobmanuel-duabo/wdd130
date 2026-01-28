@@ -77,3 +77,8 @@ article {
     float: right;
     width: 125px;
 }
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
