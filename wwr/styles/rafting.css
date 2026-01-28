@@ -70,7 +70,8 @@ article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgb(255 255 255 / 80%);
+    background-color: var(--accent2-color);
+    opacity: 0.8;
 }
 
 .hero article img {
