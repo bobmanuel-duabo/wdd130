@@ -79,11 +79,6 @@ article {
     width: 125px;
 }
 
-footer {
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
-}
-
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -147,6 +142,8 @@ header nav a {
 }
 
 footer {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
