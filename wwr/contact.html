@@ -76,34 +76,28 @@
 
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required>
-
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
 
                 <p><strong>Purpose of Message:</strong></p>
 
-                <label for="purpose-general">
-                    <input type="radio" id="purpose-general" name="purpose" value="General Inquiry"
-                      required>
-                    General Inquiry
-                </label>
+                <input type="radio" id="purpose-general" name="purpose" value="General Inquiry"
+                  required>
+                <label for="purpose-general">General Inquiry</label>
 
-                <label for="purpose-reservation">
-                    <input type="radio" id="purpose-reservation" name="purpose"
-                      value="Reservation Question">
-                    Reservation Question
-                </label>
+                <input type="radio" id="purpose-reservation" name="purpose"
+                  value="Reservation Question">
+                <label for="purpose-reservation">Reservation Question</label>
 
-                <label for="purpose-website">
-                    <input type="radio" id="purpose-website" name="purpose"
-                      value="Website Suggestion">
-                    Website Suggestion
-                </label>
+                <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion">
+                <label for="purpose-website">Website Suggestion</label>
 
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5"
+                  placeholder="Write your message here..."></textarea>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
 
                 <button type="submit">Send My Message</button>
 
