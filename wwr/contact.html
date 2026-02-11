@@ -7,7 +7,7 @@
     <meta name="description"
       content="Contact White Water Rafting for questions, reservations, and feedback. Find our address, phone, email, map, and send us a message.">
     <meta name="author" content="Duabo Bobmanuel">
-    <title>Contact Us | White Water Rafting</title>
+    <h1>Contact Us | White Water Rafting</h1>
 
 
     <link rel="stylesheet" href="styles/rafting.css">
@@ -78,27 +78,23 @@
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
 
-                <p><strong>Purpose of Message:</strong></p>
+                <fieldset>
+                    <legend>Purpose of Message</legend>
 
-                <input type="radio" id="purpose-general" name="purpose" value="General Inquiry"
-                  required>
-                <label for="purpose-general">General Inquiry</label>
+                    <div class="radio-group">
+                        <input type="radio" id="purpose-general" name="purpose"
+                          value="General Inquiry" required>
+                        <label for="purpose-general">General Inquiry</label>
 
-                <input type="radio" id="purpose-reservation" name="purpose"
-                  value="Reservation Question">
-                <label for="purpose-reservation">Reservation Question</label>
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="Reservation Question">
+                        <label for="purpose-reservation">Reservation Question</label>
 
-                <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion">
-                <label for="purpose-website">Website Suggestion</label>
-
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5"
-                  placeholder="Write your message here..."></textarea>
-
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-
-                <button type="submit">Send My Message</button>
+                        <input type="radio" id="purpose-website" name="purpose"
+                          value="Website Suggestion">
+                        <label for="purpose-website">Website Suggestion</label>
+                    </div>
+                </fieldset>
 
             </form>
         </section>
