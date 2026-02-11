@@ -224,3 +224,150 @@ footer {
     width: 100%;
     max-width: 600px;
 }
+
+/* ---------- Home: Hero ---------- */
+.hero {
+    position: relative;
+    margin: 1rem 0 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+}
+
+.hero-card {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    max-width: 420px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+
+/* ---------- Home: Newsletter ---------- */
+.newsletter {
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.newsletter-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.newsletter-form label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* ---------- Home: Grid Section ---------- */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin: 1rem 0 2rem;
+}
+
+.home-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-highlight {
+    grid-column: 1 / -1;
+    padding: 1rem;
+}
+
+/* ---------- Trips Page ---------- */
+.trips-cta {
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trip-card {
+    padding: 1rem;
+}
+
+.trips-table-wrap {
+    margin-bottom: 2rem;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        position: static;
+        max-width: none;
+        margin-top: 1rem;
+    }
+
+    .hero h1 {
+        position: static;
+        margin-bottom: 0.75rem;
+    }
+}
