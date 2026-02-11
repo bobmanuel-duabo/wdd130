@@ -218,3 +218,7 @@ footer {
 .contact-form button:hover {
     background-color: var(--secondary-color);
 }
+
+.map {
+    border: 0;
+}
