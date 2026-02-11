@@ -39,10 +39,10 @@
             <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
             <!-- Google Map -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019573620589!2d-122.41941548468118!3d37.77492977975966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c5a6f6f6f%3A0x123456789abcdef!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1616171800000!5m2!1sen!2sus"
-              width="100%" height="300" allowfullscreen="" loading="lazy">
+            <iframe title="White Water Rafting location map" src="..." width="100%" height="300"
+              allowfullscreen="" loading="lazy">
             </iframe>
+
         </section>
 
 
@@ -82,27 +82,26 @@
 
                 <p><strong>Purpose of Message:</strong></p>
 
-                <label>
-                    <input type="radio" name="purpose" value="General Inquiry" required>
+                <label for="purpose-general">
+                    <input type="radio" id="purpose-general" name="purpose" value="General Inquiry"
+                      required>
                     General Inquiry
                 </label>
 
-                <label>
-                    <input type="radio" name="purpose" value="Reservation Question">
+                <label for="purpose-reservation">
+                    <input type="radio" id="purpose-reservation" name="purpose"
+                      value="Reservation Question">
                     Reservation Question
                 </label>
 
-                <label>
-                    <input type="radio" name="purpose" value="Website Suggestion">
+                <label for="purpose-website">
+                    <input type="radio" id="purpose-website" name="purpose"
+                      value="Website Suggestion">
                     Website Suggestion
                 </label>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5"
-                  placeholder="Write your message here..."></textarea>
-
-                <label>
-                    <input type="checkbox" name="newsletter">
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
 
