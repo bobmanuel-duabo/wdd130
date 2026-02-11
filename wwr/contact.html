@@ -7,14 +7,12 @@
     <meta name="description"
       content="Contact White Water Rafting for questions, reservations, and feedback. Find our address, phone, email, map, and send us a message.">
     <meta name="author" content="Duabo Bobmanuel">
-    <h1>Contact Us | White Water Rafting</h1>
-
+    <title>Contact Us | White Water Rafting</title>
 
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-
     <header>
         <img src="images/logo.png" alt="Rafting Site Logo">
 
@@ -24,12 +22,10 @@
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
-
     </header>
 
     <main>
-
-        <h1>Contact Us</h1>
+        <h1>Contact Us | White Water Rafting</h1>
 
         <!-- Company Contact Information -->
         <section class="contact-info">
@@ -38,10 +34,11 @@
             <p><strong>Phone:</strong> +234 8032546331</p>
             <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-            <!-- Google Map -->
-            <iframe title="White Water Rafting location map" src="..." width="100%" height="300"
-              src="https://www.google.com/maps/embed?pb=...&amp;...&amp;...&amp;..." width="100%"
-              height="300" allowfullscreen="" loading="lazy">
+            <!-- Google Map (NO duplicate attributes) -->
+            <iframe title="White Water Rafting location map"
+              src="https://www.google.com/maps/embed?pb=..." width="100%" height="300"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
 
@@ -63,42 +60,58 @@
                 <img src="images/happy-client.jpg" alt="David Lee - Safety Instructor">
                 <figcaption><strong>David Lee</strong><br>Safety Instructor</figcaption>
             </figure>
-
         </section>
-
 
         <!-- Contact Form -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
 
             <form action="#" method="post">
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
                 <fieldset>
                     <legend>Purpose of Message</legend>
 
-                    <div class="radio-group">
+                    <div>
                         <input type="radio" id="purpose-general" name="purpose"
                           value="General Inquiry" required>
                         <label for="purpose-general">General Inquiry</label>
+                    </div>
 
+                    <div>
                         <input type="radio" id="purpose-reservation" name="purpose"
                           value="Reservation Question">
                         <label for="purpose-reservation">Reservation Question</label>
+                    </div>
 
+                    <div>
                         <input type="radio" id="purpose-website" name="purpose"
                           value="Website Suggestion">
                         <label for="purpose-website">Website Suggestion</label>
                     </div>
                 </fieldset>
 
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
-
     </main>
 
     <footer>
@@ -116,7 +129,6 @@
             </a>
         </nav>
     </footer>
-
 </body>
 
 </html>
