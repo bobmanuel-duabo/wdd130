@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
       content="White Water Rafting adventures for beginners to experts. Explore our trips, safety-first guides, and unforgettable river journeys.">
     <meta name="author" content="Duabo Bobmanuel">
@@ -12,9 +12,8 @@
 </head>
 
 <body>
-
     <header>
-        <img src="images/logo.png" alt="Rafting Site Logo">
+        <img src="images/logo.png" alt="Rafting Site Logo" width="120" height="120">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -26,15 +25,18 @@
     <main>
         <!-- HERO -->
         <section class="hero">
-            <img src="images/hero.jpg" alt="Rafting group riding through river rapids">
+            <img src="images/hero.jpg" alt="Rafting group riding through river rapids" width="840"
+              height="420">
             <h1>White Water Rafting — Your Next Adventure Starts Here</h1>
-            <div class="hero-card">
+
+            <!-- Use <article> so your existing CSS (.hero article) applies -->
+            <article>
                 <p>
                     Safe. Fun. Unforgettable. Join our expert guides for thrilling rapids and
                     beautiful river views.
                 </p>
                 <a class="btn" href="trips.html">Explore Our Trips</a>
-            </div>
+            </article>
         </section>
 
         <!-- NEWSLETTER -->
@@ -44,22 +46,21 @@
                 announcements.</p>
 
             <form action="#" method="post" class="newsletter-form">
-                <div>
-                    <label for="nl-name">Name</label>
-                    <input type="text" id="nl-name" name="nl-name" required>
-                </div>
-                <div>
-                    <label for="nl-email">Email</label>
-                    <input type="email" id="nl-email" name="nl-email" required>
-                </div>
+                <label for="nl-name">Name</label>
+                <input type="text" id="nl-name" name="nl-name" required>
+
+                <label for="nl-email">Email</label>
+                <input type="email" id="nl-email" name="nl-email" required>
+
                 <button type="submit" class="btn">Sign Me Up</button>
             </form>
         </section>
 
-        <!-- GRID CONTENT (NOT SINGLE COLUMN) -->
+        <!-- GRID CONTENT (NOT SINGLE COLUMN once you add .home-grid CSS) -->
         <section class="home-grid">
             <div class="home-block">
-                <img src="images/home-purpose.jpg" alt="River view with rafting boats">
+                <img src="images/home-purpose.jpg" alt="River view with rafting boats" width="400"
+                  height="260">
                 <h2>Our Purpose</h2>
                 <p>
                     We create safe, exciting river experiences that build confidence, teamwork, and
@@ -68,7 +69,8 @@
             </div>
 
             <div class="home-block">
-                <img src="images/home-offerings.jpg" alt="Rafting guide giving safety instructions">
+                <img src="images/home-offerings.jpg" alt="Rafting guide giving safety instructions"
+                  width="400" height="260">
                 <h2>What We Offer</h2>
                 <p>
                     Beginner-friendly floats, advanced rapids, family trips, and guided packages
@@ -91,19 +93,18 @@
 
     <footer>
         <p>© 2026 White Water Rafting | Duabo Bobmanuel</p>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media links">
             <a href="https://facebook.com" target="_blank" rel="noopener">
-                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/facebook.png" alt="Facebook" width="32" height="32">
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener">
-                <img src="images/instagram.png" alt="Instagram">
+                <img src="images/instagram.png" alt="Instagram" width="32" height="32">
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener">
-                <img src="images/twitter.png" alt="Twitter">
+                <img src="images/twitter.png" alt="Twitter" width="32" height="32">
             </a>
         </nav>
     </footer>
-
 </body>
 
 </html>
